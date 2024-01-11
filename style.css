@@ -18,3 +18,8 @@
 ul li.nav-item:hover{
     background-color: #0000004d !important;
 }
+
+#sidebar{
+    z-index: 996;
+    transition: all 0.3s;
+}
