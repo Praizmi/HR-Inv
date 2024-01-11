@@ -8,15 +8,23 @@
 
 .bg-mytrans{
         --bs-bg-opacity: 1;
-        background-color: #00000033 !important;
+        background-color: #c7d5c79e  !important;
 }
 
 .bg-nav{
         background-color: #0000008f !important;
 }
 
+.mt-5{
+    margin-top: 3.5rem !important;
+}
+
 ul li.nav-item:hover{
     background-color: #0000004d !important;
+}
+
+ul{
+    overflow-y: auto;
 }
 
 #sidebar{
