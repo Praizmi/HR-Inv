@@ -2,6 +2,30 @@
     color: black !important;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+@media (max-width: 720px) {
+    .offcanvas.show:not(.hiding), .offcanvas.showing {
+        transform: none;
+    }
+    .offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+        visibility: visible;
+    }
+    .offcanvas.offcanvas-start {
+        top: 0;
+        left: 0;
+        width: var(--bs-offcanvas-width);
+        border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+        transform: translateX(-100%);
+    }
+    .offcanvas.offcanvas-start {
+        top: 0;
+        left: 0;
+        width: var(--bs-offcanvas-width);
+        border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+        transform: translateX(-100%);
+    }
+}
+
 .bg-theme{
     background-color: rgba(115, 115, 156, 0.5);
 }
@@ -28,6 +52,6 @@ ul{
 }
 
 #sidebar{
-    z-index: 996;
+    /* z-index: 996; */
     transition: all 0.3s;
 }
