@@ -3,6 +3,10 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body{
+    height: 100vh;
+}
+
 @media (max-width: 720px) {
     .offcanvas.show:not(.hiding), .offcanvas.showing {
         transform: none;
@@ -53,5 +57,33 @@ ul{
 
 #sidebar{
     /* z-index: 996; */
-    transition: all 0.3s;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav-item {
+    white-space: nowrap;
+}
+
+.card.overflow-y-auto::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+.card.overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 6px; /* Set the border-radius of the scrollbar thumb */
+}
+
+.card.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color on hover */
+}
+
+.card.overflow-y-auto::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the color of the scrollbar track */
 }
